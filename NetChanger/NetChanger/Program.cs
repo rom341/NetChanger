@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Net.NetworkInformation;
-using System.Text.RegularExpressions;
 using System.Threading;
 using Microsoft.Extensions.Configuration;
+using NetChanger.Data.Network;
 
 namespace NetChanger
 {
@@ -12,19 +11,20 @@ namespace NetChanger
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("For correct operation, the program must be run as administrator!");
             // Load configuration
             var config = LoadConfiguration();
             string pingAddress = config["PingAddress"];
             int checkInterval = int.Parse(config["CheckInterval"]);
 
-            var networkManager = new NetworkManager(pingAddress);
+            var networkOperator = new NetworkConnectionOperator(pingAddress, new NetworkService());
 
             while (true)
             {
-                if (!networkManager.IsConnectedToInternet())
+                if (!networkOperator.IsConnectedToInternet())
                 {
                     Console.WriteLine("No internet connection. Attempting to connect to another network...");
-                    networkManager.ConnectToNetwork();
+                    networkOperator.ChangeNetworkToOneThatWorks();
                 }
                 else
                 {

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\NetChanger",
+    "\\NetChanger\\NetChanger",
+    "\\NetChanger\\NetChanger\\Data",
+    "\\NetChanger\\NetChanger\\Data\\Network",
+    "\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods"
+  ],
+  "SelectedNode": "\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods\\IConnectionMethod.cs",
+  "PreviewInSolutionExplorer": false
+}
