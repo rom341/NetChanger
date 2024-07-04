@@ -1,12 +1,11 @@
 ﻿using NetChanger.Data.Network.ConnectionMethods;
 using NetChanger.Data.Network.Entities;
+using NetChanger.Data.Service;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace NetChanger.Data.Network
 {
@@ -15,19 +14,25 @@ namespace NetChanger.Data.Network
         public List<List<NetworkBase>> GetSavedNetworks()
         {
             var savedNetworks = new List<List<NetworkBase>>();
-            savedNetworks.Add(GetAvailableEthernetNetworks());
-            savedNetworks.Add(GetAvailableWifiNetworks());
-            savedNetworks.Add(GetAvailableStarlinkNetworks());
-            savedNetworks.Add(GetAvailableGSMNetworks());
+
+            if (OSPlatformHelper.IsWindows())
+            {
+                savedNetworks.Add(GetAvailableNetworksWindows());
+                savedNetworks.Add(GetAvailableWirelessNetworksWindows());
+            }
+            else if (OSPlatformHelper.IsLinux())
+            {
+                savedNetworks.Add(GetAvailableNetworksLinux());
+                savedNetworks.Add(GetAvailableWirelessNetworksLinux());
+            }
 
             return savedNetworks;
         }
 
-        private List<NetworkBase> GetAvailableEthernetNetworks()
+        private List<NetworkBase> GetAvailableNetworksWindows()
         {
             List<NetworkBase> ethernetNetworks = new List<NetworkBase>();
 
-            // Пример получения доступных интерфейсов Ethernet
             ProcessStartInfo psi = new ProcessStartInfo
             {
                 FileName = "netsh",
@@ -43,11 +48,8 @@ namespace NetChanger.Data.Network
                 string output = process.StandardOutput.ReadToEnd();
                 process.WaitForExit();
 
-
-
-                // Парсинг вывода и добавление Ethernet интерфейсов
                 Regex ethernetRegex = new Regex(@"(?:\S+\s+){3}(.+)", RegexOptions.Multiline);
-                var lines = output.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries).Skip(2);//skip title
+                var lines = output.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries).Skip(2); //skip title
                 foreach (var line in lines)
                 {
                     var match = ethernetRegex.Match(line);
@@ -55,7 +57,7 @@ namespace NetChanger.Data.Network
                     {
                         var name = match.Groups[1].Value.Trim();
                         var description = $"Ethernet interface: {name}";
-                        ethernetNetworks.Add(new EthernetNetwork(name, description, new EthernetConnection()));
+                        ethernetNetworks.Add(new EthernetNetwork(name, description, new EthernetConnectionWindows()));
                     }
                 }
             }
@@ -63,7 +65,7 @@ namespace NetChanger.Data.Network
             return ethernetNetworks;
         }
 
-        private List<NetworkBase> GetAvailableWifiNetworks()
+        private List<NetworkBase> GetAvailableWirelessNetworksWindows()
         {
             List<NetworkBase> wifiNetworks = new List<NetworkBase>();
 
@@ -82,7 +84,6 @@ namespace NetChanger.Data.Network
                 string output = process.StandardOutput.ReadToEnd();
                 process.WaitForExit();
 
-                // Парсинг вывода и добавление Wi-Fi профилей
                 Regex profileRegex = new Regex(@":\s*(.+)$");
                 foreach (var line in output.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries))
                 {
@@ -101,26 +102,74 @@ namespace NetChanger.Data.Network
             return wifiNetworks;
         }
 
-        private List<NetworkBase> GetAvailableGSMNetworks()
+        private List<NetworkBase> GetAvailableNetworksLinux()
         {
-            //TODO write code for GetAvailableGsmNetworks
-            List<NetworkBase> gsmNetworks = new List<NetworkBase>();
+            List<NetworkBase> ethernetNetworks = new List<NetworkBase>();
 
-            gsmNetworks.Add(new GsmNetwork("GSM Network 1", "Example GSM network", new GSMConnection()));
+            ProcessStartInfo psi = new ProcessStartInfo
+            {
+                FileName = "nmcli",
+                Arguments = "device status",
+                RedirectStandardOutput = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
 
-            return gsmNetworks;
+            Process process = Process.Start(psi);
+            if (process != null)
+            {
+                string output = process.StandardOutput.ReadToEnd();
+                process.WaitForExit();
+
+                Regex ethernetRegex = new Regex(@"(\w+)\s+ethernet\s+connected\s+(\S+)", RegexOptions.Multiline);
+                var matches = ethernetRegex.Matches(output);
+                foreach (Match match in matches)
+                {
+                    if (match.Success)
+                    {
+                        var name = match.Groups[1].Value.Trim();
+                        var description = $"Ethernet interface: {match.Groups[2].Value.Trim()}";
+                        ethernetNetworks.Add(new EthernetNetwork(name, description, new EthernetConnectionLinux()));
+                    }
+                }
+            }
+
+            return ethernetNetworks;
         }
 
-
-        private List<NetworkBase> GetAvailableStarlinkNetworks()
+        private List<NetworkBase> GetAvailableWirelessNetworksLinux()
         {
-            //TODO write code for GetAvailableStarlinkNetworks
-            List<NetworkBase> starlinkNetworks = new List<NetworkBase>();
+            List<NetworkBase> wifiNetworks = new List<NetworkBase>();
 
-            starlinkNetworks.Add(new StarlinkNetwork("Starlink Network 1", "Example Starlink network", new StarlinkConnection()));
+            ProcessStartInfo psi = new ProcessStartInfo
+            {
+                FileName = "nmcli",
+                Arguments = "device wifi list",
+                RedirectStandardOutput = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
 
-            return starlinkNetworks;
+            Process process = Process.Start(psi);
+            if (process != null)
+            {
+                string output = process.StandardOutput.ReadToEnd();
+                process.WaitForExit();
+
+                Regex wifiRegex = new Regex(@"(\S+)\s+\S+\s+\d+\s+\S+\s+(\S+)", RegexOptions.Multiline);
+                var matches = wifiRegex.Matches(output);
+                foreach (Match match in matches)
+                {
+                    if (match.Success)
+                    {
+                        var ssid = match.Groups[1].Value.Trim();
+                        var description = $"Wifi SSID: {ssid}";
+                        wifiNetworks.Add(new WifiNetwork(ssid, description, new WirelessConnectionLinux()));
+                    }
+                }
+            }
+
+            return wifiNetworks;
         }
-
     }
 }

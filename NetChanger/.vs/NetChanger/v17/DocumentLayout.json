@@ -3,40 +3,36 @@
   "WorkspaceRootPath": "D:\\Projects\\NetChanger\\NetChanger\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|D:\\Projects\\NetChanger\\NetChanger\\netchanger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|solutionrelative:netchanger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|D:\\Projects\\NetChanger\\NetChanger\\netchanger\\data\\network\\networkconnectionoperator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|d:\\projects\\netchanger\\netchanger\\netchanger\\data\\network\\networkconnectionoperator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|solutionrelative:netchanger\\data\\network\\networkconnectionoperator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|D:\\Projects\\NetChanger\\NetChanger\\netchanger\\data\\network\\entities\\ethernetnetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|d:\\projects\\netchanger\\netchanger\\netchanger\\data\\network\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|solutionrelative:netchanger\\data\\network\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|d:\\projects\\netchanger\\netchanger\\netchanger\\data\\network\\entities\\ethernetnetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|solutionrelative:netchanger\\data\\network\\entities\\ethernetnetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|D:\\Projects\\NetChanger\\NetChanger\\netchanger\\data\\network\\connectionmethods\\ethernetconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|solutionrelative:netchanger\\data\\network\\connectionmethods\\ethernetconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|d:\\projects\\netchanger\\netchanger\\netchanger\\data\\network\\entities\\networkbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|solutionrelative:netchanger\\data\\network\\entities\\networkbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|d:\\projects\\netchanger\\netchanger\\netchanger\\data\\network\\connectionmethods\\ethernetconnectionlinux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|solutionrelative:netchanger\\data\\network\\connectionmethods\\ethernetconnectionlinux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|d:\\projects\\netchanger\\netchanger\\netchanger\\data\\network\\connectionmethods\\wirelessconectionlinux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|solutionrelative:netchanger\\data\\network\\connectionmethods\\wirelessconectionlinux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|d:\\projects\\netchanger\\netchanger\\netchanger\\data\\network\\connectionmethods\\iconnectionmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|solutionrelative:netchanger\\data\\network\\connectionmethods\\iconnectionmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|D:\\Projects\\NetChanger\\NetChanger\\netchanger\\data\\network\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|solutionrelative:netchanger\\data\\network\\networkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|D:\\Projects\\NetChanger\\NetChanger\\netchanger\\data\\network\\connectionmethods\\wificonnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|solutionrelative:netchanger\\data\\network\\connectionmethods\\wificonnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|D:\\Projects\\NetChanger\\NetChanger\\netchanger\\data\\network\\entities\\wifinetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|solutionrelative:netchanger\\data\\network\\entities\\wifinetwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|D:\\Projects\\NetChanger\\NetChanger\\netchanger\\data\\network\\entities\\networkbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|solutionrelative:netchanger\\data\\network\\entities\\networkbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|d:\\projects\\netchanger\\netchanger\\netchanger\\data\\service\\osplatformhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBF7DF0D-6252-4EB1-B663-2F8DE5CBF475}|NetChanger\\NetChanger.csproj|solutionrelative:netchanger\\data\\service\\osplatformhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,44 +42,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IConnectionMethod.cs",
-              "DocumentMoniker": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods\\IConnectionMethod.cs",
-              "RelativeDocumentMoniker": "NetChanger\\Data\\Network\\ConnectionMethods\\IConnectionMethod.cs",
-              "ToolTip": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods\\IConnectionMethod.cs",
-              "RelativeToolTip": "NetChanger\\Data\\Network\\ConnectionMethods\\IConnectionMethod.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAwCkAAAAIAAAA",
+              "DocumentIndex": 0,
+              "Title": "NetworkConnectionOperator.cs",
+              "DocumentMoniker": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\NetworkConnectionOperator.cs",
+              "RelativeDocumentMoniker": "NetChanger\\Data\\Network\\NetworkConnectionOperator.cs",
+              "ToolTip": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\NetworkConnectionOperator.cs",
+              "RelativeToolTip": "NetChanger\\Data\\Network\\NetworkConnectionOperator.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwCAAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T18:10:05.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WifiConnection.cs",
-              "DocumentMoniker": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods\\WifiConnection.cs",
-              "RelativeDocumentMoniker": "NetChanger\\Data\\Network\\ConnectionMethods\\WifiConnection.cs",
-              "ToolTip": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods\\WifiConnection.cs",
-              "RelativeToolTip": "NetChanger\\Data\\Network\\ConnectionMethods\\WifiConnection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T18:14:52.241Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EthernetConnection.cs",
-              "DocumentMoniker": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods\\EthernetConnection.cs",
-              "RelativeDocumentMoniker": "NetChanger\\Data\\Network\\ConnectionMethods\\EthernetConnection.cs",
-              "ToolTip": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods\\EthernetConnection.cs",
-              "RelativeToolTip": "NetChanger\\Data\\Network\\ConnectionMethods\\EthernetConnection.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAwA0AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T18:01:50.172Z",
+              "WhenOpened": "2024-07-04T10:33:30.204Z",
               "EditorCaption": ""
             },
             {
@@ -94,72 +65,87 @@
               "RelativeDocumentMoniker": "NetChanger\\Data\\Network\\Entities\\EthernetNetwork.cs",
               "ToolTip": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\Entities\\EthernetNetwork.cs",
               "RelativeToolTip": "NetChanger\\Data\\Network\\Entities\\EthernetNetwork.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAwBYAAAAIAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T17:28:31.077Z",
+              "WhenOpened": "2024-07-04T10:27:18.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "WifiNetwork.cs",
-              "DocumentMoniker": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\Entities\\WifiNetwork.cs",
-              "RelativeDocumentMoniker": "NetChanger\\Data\\Network\\Entities\\WifiNetwork.cs",
-              "ToolTip": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\Entities\\WifiNetwork.cs",
-              "RelativeToolTip": "NetChanger\\Data\\Network\\Entities\\WifiNetwork.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T17:23:10.136Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "NetworkBase.cs",
               "DocumentMoniker": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\Entities\\NetworkBase.cs",
               "RelativeDocumentMoniker": "NetChanger\\Data\\Network\\Entities\\NetworkBase.cs",
               "ToolTip": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\Entities\\NetworkBase.cs",
               "RelativeToolTip": "NetChanger\\Data\\Network\\Entities\\NetworkBase.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA1wBUAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T17:20:09.157Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NetworkConnectionOperator.cs",
-              "DocumentMoniker": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\NetworkConnectionOperator.cs",
-              "RelativeDocumentMoniker": "NetChanger\\Data\\Network\\NetworkConnectionOperator.cs",
-              "ToolTip": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\NetworkConnectionOperator.cs",
-              "RelativeToolTip": "NetChanger\\Data\\Network\\NetworkConnectionOperator.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAqwFUAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T13:47:11.859Z",
+              "WhenOpened": "2024-07-04T10:27:17.065Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "WirelessConectionLinux.cs",
+              "DocumentMoniker": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods\\WirelessConectionLinux.cs",
+              "RelativeDocumentMoniker": "NetChanger\\Data\\Network\\ConnectionMethods\\WirelessConectionLinux.cs",
+              "ToolTip": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods\\WirelessConectionLinux.cs",
+              "RelativeToolTip": "NetChanger\\Data\\Network\\ConnectionMethods\\WirelessConectionLinux.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T10:26:33.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EthernetConnectionLinux.cs",
+              "DocumentMoniker": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods\\EthernetConnectionLinux.cs",
+              "RelativeDocumentMoniker": "NetChanger\\Data\\Network\\ConnectionMethods\\EthernetConnectionLinux.cs",
+              "ToolTip": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods\\EthernetConnectionLinux.cs",
+              "RelativeToolTip": "NetChanger\\Data\\Network\\ConnectionMethods\\EthernetConnectionLinux.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T10:26:06.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IConnectionMethod.cs",
+              "DocumentMoniker": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods\\IConnectionMethod.cs",
+              "RelativeDocumentMoniker": "NetChanger\\Data\\Network\\ConnectionMethods\\IConnectionMethod.cs",
+              "ToolTip": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods\\IConnectionMethod.cs",
+              "RelativeToolTip": "NetChanger\\Data\\Network\\ConnectionMethods\\IConnectionMethod.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T10:24:04.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OSPlatformHelper.cs",
+              "DocumentMoniker": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Service\\OSPlatformHelper.cs",
+              "RelativeDocumentMoniker": "NetChanger\\Data\\Service\\OSPlatformHelper.cs",
+              "ToolTip": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Service\\OSPlatformHelper.cs",
+              "RelativeToolTip": "NetChanger\\Data\\Service\\OSPlatformHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-04T10:20:33.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "NetworkService.cs",
               "DocumentMoniker": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\NetworkService.cs",
               "RelativeDocumentMoniker": "NetChanger\\Data\\Network\\NetworkService.cs",
               "ToolTip": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Data\\Network\\NetworkService.cs",
               "RelativeToolTip": "NetChanger\\Data\\Network\\NetworkService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAwBYAAAAMAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwD0AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T13:44:38.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Program.cs",
-              "RelativeDocumentMoniker": "NetChanger\\Program.cs",
-              "ToolTip": "D:\\Projects\\NetChanger\\NetChanger\\NetChanger\\Program.cs",
-              "RelativeToolTip": "NetChanger\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAABiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T15:30:38.898Z",
+              "WhenOpened": "2024-07-04T10:20:10.835Z",
               "EditorCaption": ""
             }
           ]

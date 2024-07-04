@@ -95,18 +95,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\Network\ConnectionMethods\EthernetConnection.cs" />
-    <Compile Include="Data\Network\ConnectionMethods\GSMConnection.cs" />
+    <Compile Include="Data\Network\ConnectionMethods\EthernetConnectionLinux.cs" />
+    <Compile Include="Data\Network\ConnectionMethods\EthernetConnectionWindows.cs" />
     <Compile Include="Data\Network\ConnectionMethods\IConnectionMethod.cs" />
-    <Compile Include="Data\Network\ConnectionMethods\StarlinkConnection.cs" />
-    <Compile Include="Data\Network\ConnectionMethods\WifiConnection.cs" />
+    <Compile Include="Data\Network\ConnectionMethods\WirelessConectionLinux.cs" />
+    <Compile Include="Data\Network\ConnectionMethods\WirelessConnectionWindows.cs" />
     <Compile Include="Data\Network\Entities\EthernetNetwork.cs" />
-    <Compile Include="Data\Network\Entities\GSMNetwork.cs" />
     <Compile Include="Data\Network\Entities\NetworkBase.cs" />
-    <Compile Include="Data\Network\Entities\StarlinkNetwork.cs" />
     <Compile Include="Data\Network\Entities\WifiNetwork.cs" />
     <Compile Include="Data\Network\NetworkConnectionOperator.cs" />
     <Compile Include="Data\Network\NetworkService.cs" />
+    <Compile Include="Data\Service\OSPlatformHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

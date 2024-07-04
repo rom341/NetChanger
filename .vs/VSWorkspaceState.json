@@ -7,6 +7,6 @@
     "\\NetChanger\\NetChanger\\Data\\Network",
     "\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods"
   ],
-  "SelectedNode": "\\NetChanger\\NetChanger\\Data\\Network\\ConnectionMethods\\IConnectionMethod.cs",
+  "SelectedNode": "\\NetChanger\\NetChanger\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

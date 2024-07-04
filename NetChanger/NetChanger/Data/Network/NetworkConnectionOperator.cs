@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Net.NetworkInformation;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -17,8 +18,8 @@ namespace NetChanger.Data.Network
 
         public NetworkConnectionOperator(string pingAddress, NetworkService networkService)
         {
-            _pingAddress = pingAddress;
-            _networkService = networkService;
+            this._pingAddress = pingAddress;
+            this._networkService = networkService;
         }
 
         public void ChangeNetworkToOneThatWorks()

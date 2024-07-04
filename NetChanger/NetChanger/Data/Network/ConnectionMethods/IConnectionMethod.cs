@@ -21,8 +21,7 @@ namespace NetChanger.Data.Network.ConnectionMethods
                     Arguments = arguments,
                     RedirectStandardOutput = true,
                     UseShellExecute = false,
-                    CreateNoWindow = true,
-                    Verb = "runas"
+                    CreateNoWindow = true
                 };
 
                 Process process = Process.Start(psi);
@@ -36,7 +35,7 @@ namespace NetChanger.Data.Network.ConnectionMethods
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Ошибка при выполнении процесса: {ex.Message}");
+                Console.WriteLine($"Process error: {ex.Message}");
                 return false;
             }
         }
