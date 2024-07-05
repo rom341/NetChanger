@@ -121,10 +121,12 @@ namespace NetChanger.Data.Network
                 string output = process.StandardOutput.ReadToEnd();
                 process.WaitForExit();
 
-                Regex ethernetRegex = new Regex(@"(\w+)\s+ethernet\s+connected\s+(\S+)", RegexOptions.Multiline);
-                var matches = ethernetRegex.Matches(output);
-                foreach (Match match in matches)
+                var lines = output.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries).Skip(1); //skip title
+
+                Regex ethernetRegex = new Regex(@"^\s*(\w+)\s+", RegexOptions.Multiline);
+                foreach (string line in lines)
                 {
+                    var match = ethernetRegex.Match(line);
                     if (match.Success)
                     {
                         var name = match.Groups[1].Value.Trim();
@@ -156,10 +158,12 @@ namespace NetChanger.Data.Network
                 string output = process.StandardOutput.ReadToEnd();
                 process.WaitForExit();
 
-                Regex wifiRegex = new Regex(@"(\S+)\s+\S+\s+\d+\s+\S+\s+(\S+)", RegexOptions.Multiline);
-                var matches = wifiRegex.Matches(output);
-                foreach (Match match in matches)
+                var lines = output.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries).Skip(1); //skip title
+
+                Regex wifiRegex = new Regex(@"^\s*(\w+)\s+", RegexOptions.Multiline);
+                foreach (string line in lines)
                 {
+                    var match = wifiRegex.Match(line);
                     if (match.Success)
                     {
                         var ssid = match.Groups[1].Value.Trim();
